@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.number_locator.MainActivity"
+    tools:ignore="TextFields" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:background="#7fffd4" >
+
+        <LinearLayout
+            android:layout_width="104dp"
+            android:layout_height="37dp"
+            android:gravity="center|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:gravity="center|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Locator"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="99dp"
+        android:background="@drawable/logo"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="14dp"
+        android:background="#7fffd4"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#7fffd4"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/blankbox"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="14dp"
+        android:background="#7fffd4"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#7fffd4"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="14dp"
+        android:background="#7fffd4"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf" >
+    </LinearLayout>
+    
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="14dp"
+    android:layout_weight="0.93"
+    android:background="#7fffd4"
+    android:gravity="center|top"
+    tools:ignore="UselessLeaf" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="top" />
+</LinearLayout>
+   
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:background="#7fffd4"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/company" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

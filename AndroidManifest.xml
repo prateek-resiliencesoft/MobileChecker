@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobilelocator"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MobileLocator"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DesignActivity"
+            android:label="@string/title_activity_design" >
+        </activity>
+        <activity
+            android:name=".LinkActivity"
+            android:label="@string/title_activity_link" >
+        </activity>
+        <activity
+            android:name=".HelpMainActivity"
+            android:label="@string/title_activity_help_main" >
+        </activity>
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_help" >
+        </activity>
+    </application>
+
+</manifest>
