@@ -47,7 +47,7 @@ ProgressDialog dialog;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mobile_locator);
-        
+        Search();
         editsearch=(EditText)findViewById(R.id.editText1);
         tvmessage=(TextView)findViewById(R.id.textView3);
         tvarrow=(TextView)findViewById(R.id.textView1);
@@ -64,7 +64,7 @@ ProgressDialog dialog;
 				// TODO Auto-generated method stub
 				tvmessage.setText("");
 				SearchNumber = editsearch.getText().toString();
-				httppost = new HttpPost(HttpUrls.HttpMobileSearch);
+				httppost = new HttpPost(HttpUrls.HttpMobileSearch+SearchNumber);
 				
 				if (SearchNumber.equals(""))					
 				{
