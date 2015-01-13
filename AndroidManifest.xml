@@ -35,15 +35,13 @@
             android:name=".LinkActivity"
             android:label="@string/title_activity_link" >
         </activity>
-       
         <activity
             android:name=".FeedbackActivity"
             android:label="@string/title_activity_feedback" >
         </activity>
-       <activity
+        <activity
             android:name=".HelpActivity"
             android:label="@string/title_activity_help" >
-            
         </activity>
     </application>
 

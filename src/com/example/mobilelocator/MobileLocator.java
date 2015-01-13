@@ -50,7 +50,7 @@ ProgressDialog dialog;
         Search();
         editsearch=(EditText)findViewById(R.id.editText1);
         tvmessage=(TextView)findViewById(R.id.textView3);
-        tvarrow=(TextView)findViewById(R.id.textView1);
+       tvarrow=(TextView)findViewById(R.id.textView1);	   
         tvarrow.setOnClickListener(this);
     }
     

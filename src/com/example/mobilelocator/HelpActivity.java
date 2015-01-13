@@ -7,16 +7,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class HelpActivity extends ActionBarActivity implements OnClickListener {
- TextView tvarrow;
+TextView tvarrow;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_help);
-		tvarrow=(Button)findViewById(R.id.textView1);
+		tvarrow=(TextView)findViewById(R.id.textView1);
 		tvarrow.setOnClickListener(this);
 	}
 
@@ -43,5 +42,6 @@ public class HelpActivity extends ActionBarActivity implements OnClickListener {
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		startActivity(new Intent(HelpActivity.this, LinkActivity.class));
+		finish();
 	}
 }

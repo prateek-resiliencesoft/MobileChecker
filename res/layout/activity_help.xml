@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.number_locator.MainActivity"
+    tools:context="com.example.mobilelocator.HelpActivity"
     tools:ignore="TextFields" >
-    
+
     
     
     <LinearLayout
@@ -21,56 +21,61 @@
             android:gravity="center|left"
             android:orientation="vertical" >
 
-             <TextView
-             android:id="@+id/textView1"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:background="@drawable/arrow"/>
-       </LinearLayout>
+            <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow"/>
 
-     <LinearLayout
+       </LinearLayout>
+       <LinearLayout
             android:layout_width="194dp"
             android:layout_height="37dp"
             android:gravity="center|left"
             android:orientation="vertical" >
 
-          <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mobile Locator" 
-            tools:ignore="HardcodedText"/>
-        </LinearLayout>
-     </LinearLayout> 
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Locator"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:ignore="HardcodedText" />
 
-   <TextView
+   </LinearLayout>
+  </LinearLayout>
+
+    <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="382dp"
+        android:layout_height="390dp"
         android:text="Mobile Locator:-
          In this app we have put the 10 digit 
          mobile number and search the location 
         of the people in respective State 
-         How to Use The Product:-  
-     
-     1.  Install  the app .  
-    2.  Once you touch the app it will display  
+         
+         How to Use The Product:-
+   1.  Install  the app .  
+   2.  Once you touch the app it will display  
          FirstPage for  few  milliseconds After 
          that automatically it will 
          navigate to dashboard         
-     3.  There is three Functionality (1) ->Search, 
+   3.  There is three Functionality (1) ->Search, 
         (2)->Feedback,(3)->help       
-     4.  Put the 10 digit mobile number.  
-     5.  Click on the Search button to trace  
+   4.  Put the 10 digit mobile number.  
+   5.  Click on the Search button to trace  
          the number.         
-    6.  Downwards in the screen see the position 
-        of number is present" />
+   6.  Downwards in the screen see the position 
+        of number is present"
+        tools:ignore="HardcodedText" />
+
+    
+  
     <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:background="@drawable/company" >
    </LinearLayout>
-
     
     
-</LinearLayout>    
+</LinearLayout>
