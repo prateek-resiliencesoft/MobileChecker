@@ -1,16 +1,27 @@
 package com.example.mobilelocator;
 
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class LinkActivity extends ActionBarActivity {
-
+public class LinkActivity extends ActionBarActivity implements OnClickListener {
+ Button search,feedback,help;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_link);
+		search=(Button)findViewById(R.id.buttonSubmit);
+		search.setOnClickListener(this);
+		feedback=(Button)findViewById(R.id.button2);
+		feedback.setOnClickListener(this);
+		help=(Button)findViewById(R.id.button3);
+		help.setOnClickListener(this);
+		
 	}
 
 	@Override
@@ -30,5 +41,35 @@ public class LinkActivity extends ActionBarActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		try 
+		{
+			switch(v.getId())
+			{ 
+			case R.id.buttonSubmit:
+				Intent intent=new Intent(LinkActivity.this, MobileLocator.class);
+				startActivity(intent);
+				finish();
+			 break;
+			 
+			 case R.id.button2:
+				 Intent intent1=new Intent(LinkActivity.this, FeedbackActivity.class);
+				 startActivity(intent1);
+				 finish();
+				break;
+			 case R.id.button3:
+				startActivity(new Intent(LinkActivity.this, HelpActivity.class));
+				 finish();
+			  break;
+			}
+			
+		 } 
+		catch (Exception e) {
+			// TODO: handle exception
+		}
 	}
 }

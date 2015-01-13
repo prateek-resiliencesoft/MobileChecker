@@ -88,14 +88,16 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="33dp"
         android:background="#7fffd4"
         android:gravity="center"
         android:orientation="vertical"
         tools:ignore="UselessLeaf" >
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttonSubmit"
+            android:background="#7fffd4"	
+            android:textColor="#8b0000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Search"
@@ -104,7 +106,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="14dp"
+        android:layout_height="4dp"
         android:background="#7fffd4"
         android:orientation="vertical"
         tools:ignore="UselessLeaf" >
@@ -121,8 +123,9 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_height="81dp"
         android:gravity="top" />
+
 </LinearLayout>
    
     <LinearLayout

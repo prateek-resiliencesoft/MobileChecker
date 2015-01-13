@@ -56,7 +56,7 @@ ProgressDialog dialog;
     
     public void Search()
     {
-    	button=(Button)findViewById(R.id.button1);
+    	button=(Button)findViewById(R.id.buttonSubmit);
     	button.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -70,7 +70,8 @@ ProgressDialog dialog;
 				{
 				 Toast.makeText(MobileLocator.this, "Fields are empty",Toast.LENGTH_SHORT).show();
 				 return;
-				} else if (SearchNumber.length() < 10) 
+				} 
+				else if (SearchNumber.length() < 10) 
 				{
 				Toast.makeText(MobileLocator.this,"Password Size is less than 10",Toast.LENGTH_SHORT).show();
 				} 
@@ -95,7 +96,7 @@ ProgressDialog dialog;
     }
 
 
-    protected Boolean isNetworkAvailable() {
+   protected Boolean isNetworkAvailable() {
 		// TODO Auto-generated method stub
     	ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 		NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
@@ -144,13 +145,13 @@ ProgressDialog dialog;
 				int duration = Toast.LENGTH_SHORT;	
 //				tvmessage.setText(result);
 				String[] parts = result.split(",");
-				String[] find = parts[0].split(":"); 
-				location=find[1];
-			    String[] sig=parts[1].split(":");
-			    signal=sig[1];
-			    String[] opr=parts[2].split(":");
-			    operator=opr[1].replace(opr[1].substring(opr[1].indexOf("</a")), "");
-			    msg=location+" "+signal+" "+operator;
+//				String[] find = parts[0].split(":"); 
+				location=parts[0];
+//		    String[] sig=parts[1].split(":");
+			    signal=parts[1];
+//			    String[] opr=parts[2].split(":");
+			    operator=parts[2].replace(parts[2].substring(parts[2].indexOf("</a")), "");
+			    msg=location+"\n"+" "+signal+"\n"+" "+operator;
 			    tvmessage.setText(msg);
 			    //here we can write code for map in webview
 			    dialog.dismiss();

@@ -1,16 +1,23 @@
 package com.example.mobilelocator;
 
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
 
-public class HelpActivity extends ActionBarActivity {
-
+public class HelpActivity extends ActionBarActivity implements OnClickListener {
+ TextView tvarrow;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_help);
+		tvarrow=(Button)findViewById(R.id.textView1);
+		tvarrow.setOnClickListener(this);
 	}
 
 	@Override
@@ -30,5 +37,11 @@ public class HelpActivity extends ActionBarActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		startActivity(new Intent(HelpActivity.this, LinkActivity.class));
 	}
 }

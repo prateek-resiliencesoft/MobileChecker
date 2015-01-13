@@ -1,6 +1,10 @@
 package com.example.mobilelocator;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,6 +15,17 @@ public class DesignActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_design);
+		Timer timer=new Timer();
+		timer.schedule(new TimerTask() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				Intent intent=new Intent(DesignActivity.this, LinkActivity.class);
+				startActivity(intent);
+				stopService(intent);
+			}
+		}, 3000);
 	}
 
 	@Override
