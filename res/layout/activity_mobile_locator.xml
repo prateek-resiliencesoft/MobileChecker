@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#7fffd4"
     tools:context="com.example.number_locator.MainActivity"
     tools:ignore="TextFields" >
 
@@ -16,23 +17,24 @@
             android:layout_width="104dp"
             android:layout_height="37dp"
             android:gravity="center|left"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded" >
 
-            
             <TextView
-             android:id="@+id/textView1"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:background="@drawable/arrow"/>
-            
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arrow"
+                tools:ignore="SelectableText" />
 
-        </LinearLayout> 
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="37dp"
             android:gravity="center|left"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded" >
 
             <TextView
                 android:id="@+id/textView2"
@@ -73,9 +75,9 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/blankbox"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:ems="10"
             android:inputType="phone"
-            android:ems="10" >
+            android:textAppearance="?android:attr/textAppearanceLarge" >
 
             <requestFocus />
         </EditText>
@@ -99,11 +101,11 @@
 
         <Button
             android:id="@+id/buttonSubmit"
-            android:background="#7fffd4"	
-            android:textColor="#8b0000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#7fffd4"
             android:text="Search"
+            android:textColor="#8b0000"
             tools:ignore="HardcodedText" />
     </LinearLayout>
 
@@ -114,38 +116,51 @@
         android:orientation="vertical"
         tools:ignore="UselessLeaf" >
     </LinearLayout>
-    
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="14dp"
-    android:layout_weight="0.93"
-    android:background="#7fffd4"
-    android:gravity="center|top"
-    tools:ignore="UselessLeaf" >
-
-    
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="81dp"
-        android:gravity="top" />
-
-</LinearLayout>
-   
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.10"
-        android:background="#7fffd4"
-        android:orientation="vertical"
-        tools:ignore="UselessLeaf" >
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/company" >
-        </LinearLayout>
-    </LinearLayout>
+            android:layout_height="150dp"
+            android:background="#7fffd4"
+            android:gravity="center|top"
+            tools:ignore="UselessLeaf,DisableBaselineAlignment" >
+            
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:gravity="top"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                tools:ignore="SelectableText" />
+
+       </LinearLayout>
+
+<!--   <ScrollView -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="0dp" -->
+<!--         android:layout_weight="0.77" >  -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#7fffd4"
+        tools:ignore="UselessLeaf" >
+        
+<!--             <WebView -->
+<!--                 android:id="@+id/WebUrl" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="93dp" -->
+<!--                 android:isScrollContainer="true" /> -->
+
+          </LinearLayout>      
+<!--     </ScrollView> -->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@drawable/company"
+           android:gravity="bottom" >
+
+         </LinearLayout>  
+       
+    
 
 </LinearLayout>

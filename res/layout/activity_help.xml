@@ -7,8 +7,6 @@
     tools:context="com.example.mobilelocator.HelpActivity"
     tools:ignore="TextFields" >
 
-    
-    
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="38dp"
@@ -19,20 +17,24 @@
             android:layout_width="104dp"
             android:layout_height="match_parent"
             android:gravity="center|left"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded" >
 
             <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/arrow"/>
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arrow"
+                tools:ignore="SelectableText" />
 
-       </LinearLayout>
-       <LinearLayout
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="194dp"
             android:layout_height="37dp"
             android:gravity="center|left"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded" >
 
             <TextView
                 android:id="@+id/textView2"
@@ -41,41 +43,53 @@
                 android:text="Mobile Locator"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
 
-   </LinearLayout>
-  </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="390dp"
-        android:text="Mobile Locator:-
-         In this app we have put the 10 digit 
-         mobile number and search the location 
-        of the people in respective State 
-         
-         How to Use The Product:-
-   1.  Install  the app .  
-   2.  Once you touch the app it will display  
-         FirstPage for  few  milliseconds After 
-         that automatically it will 
-         navigate to dashboard         
-   3.  There is three Functionality (1) ->Search, 
-        (2)->Feedback,(3)->help       
-   4.  Put the 10 digit mobile number.  
-   5.  Click on the Search button to trace  
-         the number.         
-   6.  Downwards in the screen see the position 
-        of number is present"
-        tools:ignore="HardcodedText" />
-
-    
-  
     <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/company" >
-   </LinearLayout>
-    
-    
+        android:layout_width="fill_parent"
+        android:layout_height="390dp"
+        android:background="#7fffd4"
+        android:gravity="center|top"
+        tools:ignore="UselessLeaf,DisableBaselineAlignment" >
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.88"
+            tools:ignore="UselessParent" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:textStyle="bold"
+               android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Mobile Locator:-
+    In this app we have put the 10 digit mobile number and search the location of the people in respective State        
+    How to Use The Product:-    
+1.Install  the app .
+     
+2.Once you touch the app it will display  FirstPage for  few  milliseconds After that automatically it will navigate to dashboard  
+               
+3.There is three Functionality (1) ->Search, (2)->Feedback,(3)->help     
+      
+4.Put the 10 digit mobile number.  
+   
+5.Click on the Search button to trace the number.
+                   
+6.Downwards in the screen see the position of number is present"
+                tools:ignore="HardcodedText" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/company"
+        tools:ignore="InefficientWeight" >
+
+    </LinearLayout>
+
 </LinearLayout>

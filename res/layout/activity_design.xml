@@ -7,6 +7,7 @@
     tools:context="com.example.number_locator.MainActivity"
     tools:ignore="TextFields" >
 
+ 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="38dp"
@@ -43,5 +44,6 @@
             android:layout_height="match_parent"
             android:background="@drawable/company" >
         </LinearLayout>
-       
+
+   
    </LinearLayout>

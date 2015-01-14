@@ -28,6 +28,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -43,6 +45,7 @@ String SearchNumber,location,signal,operator,msg;
 Boolean internetactive;
 HttpClient httpclient;
 ProgressDialog dialog;
+WebView webview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,10 +74,14 @@ ProgressDialog dialog;
 				 Toast.makeText(MobileLocator.this, "Fields are empty",Toast.LENGTH_SHORT).show();
 				 return;
 				} 
-				else if (SearchNumber.length() < 10) 
+				else if (SearchNumber.length() < 10 ||SearchNumber.length()>10 ) 
 				{
-				Toast.makeText(MobileLocator.this,"Password Size is less than 10",Toast.LENGTH_SHORT).show();
+				Toast.makeText(MobileLocator.this,"Please Enter 10 digit Mobile number",Toast.LENGTH_SHORT).show();
 				} 
+//				else if(SearchNumber.length()>10)
+//				{
+//					Toast.makeText(MobileLocator.this,"Number Size is grater than 10",Toast.LENGTH_SHORT).show();
+//				}
 				else
 				{ 
 				 internetactive = isNetworkAvailable();
@@ -143,9 +150,10 @@ ProgressDialog dialog;
 		 {
 			 super.onPostExecute(result1);
 				int duration = Toast.LENGTH_SHORT;	
-//				tvmessage.setText(result);
-				String[] parts = result.split(",");
-//				String[] find = parts[0].split(":"); 
+	//			tvmessage.setText(result);
+			String[] parts = result.split(",");
+				String[] find = parts[0].split(":"); 
+				String map=find[1];
 				location=parts[0];
 //		    String[] sig=parts[1].split(":");
 			    signal=parts[1];
@@ -154,7 +162,12 @@ ProgressDialog dialog;
 			    msg=location+"\n"+" "+signal+"\n"+" "+operator;
 			    tvmessage.setText(msg);
 			    //here we can write code for map in webview
+//			    webview=(WebView)findViewById(R.id.WebUrl);
+//			    webview.setWebViewClient(new WebViewClient());
+//			    webview.getSettings().setJavaScriptEnabled(true);
+//			    webview.loadUrl("https://www.google.co.in/?gfe_rd=cr&ei=PqerVL3rFKnW8geozYGABw&gws_rd=ssl#q=map+of+"+map);
 			    dialog.dismiss();
+			    
 		 }
     }
 
