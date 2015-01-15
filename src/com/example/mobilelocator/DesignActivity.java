@@ -8,13 +8,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.TextView;
 
-public class DesignActivity extends ActionBarActivity {
-
+public class DesignActivity extends ActionBarActivity implements OnClickListener {
+  TextView tvarrow;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_design);
+		tvarrow=(TextView)findViewById(R.id.textView1);
+		tvarrow.setOnClickListener(this);
 		Timer timer=new Timer();
 		timer.schedule(new TimerTask() {
 			
@@ -25,7 +30,7 @@ public class DesignActivity extends ActionBarActivity {
 				startActivity(intent);
 				stopService(intent);
 			}
-		}, 5000);
+		}, 3000);
 	}
 
 	@Override
@@ -45,5 +50,12 @@ public class DesignActivity extends ActionBarActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View arg0) {
+		// TODO Auto-generated method stub
+		startActivity(new Intent(DesignActivity.this, LinkActivity.class));
+		finish();
 	}
 }

@@ -79,7 +79,7 @@ WebView webview;
 				 Toast.makeText(MobileLocator.this, "Fields are empty",Toast.LENGTH_SHORT).show();
 				 return;
 				} 
-				else if (SearchNumber.length() < 10 ||SearchNumber.length()>10 ) 
+				else if (SearchNumber.length() < 10  ) 
 				{
 				Toast.makeText(MobileLocator.this,"Please Enter 10 digit Mobile number",Toast.LENGTH_SHORT).show();
 				} 
