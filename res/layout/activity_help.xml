@@ -67,22 +67,9 @@
                 android:textStyle="bold"
                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Mobile Locator:-
-In this app we have put the 10 digit mobile number and search the location of the people in respective State        
-How to Use The Product:-    
-1.Install  the app .         
-     
-2.Once you touch the app it will display  FirstPage for  few  milliseconds After that automatically it will navigate to dashboard  
+In this app you have to put 10 digit mobile number and you will get number location."    
+tools:ignore="HardcodedText" />
                
-                     3.There is three Functionality (1) ->Search, (2)->Feedback,
-                     (3)->help     
-      
-                     4.Put the 10 digit mobile 
-                     number. 
-                      
-                    5.Click on the Search button to trace the number.
-                   
-6.Downwards in the screen see the position of number is present"
-                tools:ignore="HardcodedText" />
         </ScrollView>
     </LinearLayout>
 
