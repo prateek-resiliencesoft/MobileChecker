@@ -8,34 +8,17 @@
     tools:ignore="TextFields" >
 
  
-   <LinearLayout
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="38dp"
-        android:background="#7fffd4" >
-
-        <LinearLayout
-            android:layout_width="104dp"
-            android:layout_height="37dp"
-            android:gravity="center|left"
-            android:orientation="vertical"
-            tools:ignore="RtlHardcoded" >
-                 
-                 <TextView
-                 android:id="@+id/textView1"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                  android:background="@drawable/arrow"
-                  
-                  tools:ignore="SelectableText" />
-
-        </LinearLayout>
+        android:background="#7fffd4"
+        tools:ignore="UselessParent" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="37dp"
-            android:gravity="center|left"
-            android:orientation="vertical"
-            tools:ignore="RtlHardcoded" >
+            android:gravity="center"
+            android:orientation="vertical" >
 
             <TextView
                 android:id="@+id/textView2"
@@ -44,9 +27,9 @@
                 android:text="Mobile Locator"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 tools:ignore="HardcodedText" />
-           
         </LinearLayout>
     </LinearLayout>
+
     
     
     
@@ -55,9 +38,6 @@
         android:layout_height="388dp"
         android:background="@drawable/logo1"
         android:orientation="vertical" >
-
-        
-
     </LinearLayout>
     <LinearLayout
             android:layout_width="fill_parent"
