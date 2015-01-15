@@ -129,7 +129,10 @@ public class FeedbackActivity extends ActionBarActivity implements OnClickListen
 			super.onPostExecute(result1);
 		   int duration = Toast.LENGTH_SHORT;
 		   try {
-			   Toast.makeText(FeedbackActivity.this,"Successfully Submitted",Toast.LENGTH_SHORT).show();
+			   Toast.makeText(FeedbackActivity.this,"Thanks For Your Feedback",Toast.LENGTH_SHORT).show();
+			   edname.setText("");
+			   edemail.setText("");
+			   edmessage.setText("");
 		} 
 		   catch (Exception e) {
 			// TODO: handle exception

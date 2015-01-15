@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="#7fffd4" 
     android:orientation="vertical"
     tools:context="com.example.number_locator.MainActivity"
     tools:ignore="TextFields" >
@@ -32,7 +32,9 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="99dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/logo"
         android:orientation="vertical" >
     </LinearLayout>

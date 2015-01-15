@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#7fffd4"
+     android:background="#7fffd4"
     tools:context="com.example.number_locator.MainActivity"
     tools:ignore="TextFields" >
 
@@ -43,13 +43,16 @@
                 android:text="Mobile Locator"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 tools:ignore="HardcodedText" />
+           
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="99dp"
-        android:background="@drawable/logo"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/logo2"
         android:orientation="vertical" >
     </LinearLayout>
 
@@ -76,8 +79,10 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/blankbox"
             android:ems="10"
+            android:hint="Enter 10 digit Mobile Number"
             android:inputType="phone"
-            android:textAppearance="?android:attr/textAppearanceLarge" >
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            tools:ignore="HardcodedText" >
 
             <requestFocus />
         </EditText>

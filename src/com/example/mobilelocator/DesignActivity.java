@@ -25,7 +25,7 @@ public class DesignActivity extends ActionBarActivity {
 				startActivity(intent);
 				stopService(intent);
 			}
-		}, 3000);
+		}, 5000);
 	}
 
 	@Override

@@ -36,7 +36,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="388dp"
-        android:background="@drawable/india"
+        android:background="@drawable/logo1"
         android:orientation="vertical" >
     </LinearLayout>
     <LinearLayout

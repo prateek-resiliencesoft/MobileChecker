@@ -32,6 +32,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -45,6 +46,7 @@ String SearchNumber,location,signal,operator,msg;
 Boolean internetactive;
 HttpClient httpclient;
 ProgressDialog dialog;
+
 WebView webview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +57,9 @@ WebView webview;
         tvmessage=(TextView)findViewById(R.id.textView3);
        tvarrow=(TextView)findViewById(R.id.textView1);	   
         tvarrow.setOnClickListener(this);
+        
+       
+        
     }
     
     public void Search()
@@ -159,7 +164,7 @@ WebView webview;
 			    signal=parts[1];
 //			    String[] opr=parts[2].split(":");
 			    operator=parts[2].replace(parts[2].substring(parts[2].indexOf("</a")), "");
-			    msg=location+"\n"+" "+signal+"\n"+" "+operator;
+			    msg= location+"\n"+signal+"\n"+operator;
 			    tvmessage.setText(msg);
 			    //here we can write code for map in webview
 //			    webview=(WebView)findViewById(R.id.WebUrl);
