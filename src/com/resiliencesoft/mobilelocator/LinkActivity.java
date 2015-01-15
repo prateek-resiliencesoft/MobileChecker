@@ -1,4 +1,6 @@
-package com.example.mobilelocator;
+package com.resiliencesoft.mobilelocator;
+
+import com.resiliencesoft.mobilelocator.R;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;

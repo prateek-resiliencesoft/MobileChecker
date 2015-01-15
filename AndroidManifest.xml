@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mobilelocator"
+    package="com.resiliencesoft.mobilelocator"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -20,11 +20,11 @@
         android:logo="@drawable/ic_launcher"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MobileLocator"
+            android:name="com.resiliencesoft.mobilelocator.MobileLocator"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".DesignActivity"
+            android:name="com.resiliencesoft.mobilelocator.DesignActivity"
             android:label="@string/title_activity_design" >
           <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,16 +33,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LinkActivity"
+            android:name="com.resiliencesoft.mobilelocator.LinkActivity"
             android:label="@string/title_activity_link" >
               
         </activity>
         <activity
-            android:name=".FeedbackActivity"
+            android:name="com.resiliencesoft.mobilelocator.FeedbackActivity"
             android:label="@string/title_activity_feedback" >
         </activity>
         <activity
-            android:name=".HelpActivity"
+            android:name="com.resiliencesoft.mobilelocator.HelpActivity"
             android:label="@string/title_activity_help" >
         </activity>
     </application>

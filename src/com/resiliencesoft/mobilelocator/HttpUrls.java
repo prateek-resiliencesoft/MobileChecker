@@ -1,4 +1,4 @@
-package com.example.mobilelocator;
+package com.resiliencesoft.mobilelocator;
 
 public class HttpUrls {
 	static String HttpMobileSearch = "http://phpprojects.softbucket.co.in/Location/request.php?number=";

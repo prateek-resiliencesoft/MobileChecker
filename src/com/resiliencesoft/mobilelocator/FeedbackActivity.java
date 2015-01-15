@@ -1,4 +1,4 @@
-package com.example.mobilelocator;
+package com.resiliencesoft.mobilelocator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,8 @@ import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.CoreProtocolPNames;
 import org.apache.http.params.HttpParams;
 
-import com.example.mobilelocator.MobileLocator.getresult;
+import com.resiliencesoft.mobilelocator.R;
+import com.resiliencesoft.mobilelocator.MobileLocator.getresult;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Context;
