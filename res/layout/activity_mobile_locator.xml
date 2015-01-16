@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
      android:background="#7fffd4"
-    tools:context="com.example.number_locator.MainActivity"
+    tools:context="com.resiliencesoft.mobilelocator.MainActivity"
     tools:ignore="TextFields" >
 
     <LinearLayout
@@ -96,6 +96,19 @@
         tools:ignore="UselessLeaf" >
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65" >
+        
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:background="#7fffd4"
+            android:orientation="vertical" >
+    
+    
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="33dp"
@@ -166,6 +179,7 @@
 
          </LinearLayout>  
        
-    
+   </LinearLayout>
+    </ScrollView>  
 
 </LinearLayout>

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#7fffd4" 
     android:orientation="vertical"
-    tools:context="com.example.number_locator.MainActivity"
+    tools:context="com.resiliencesoft.mobilelocator.MainActivity"
     tools:ignore="TextFields" >
 
     <LinearLayout

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.number_locator.MainActivity"
+    tools:context="com.resiliencesoft.mobilelocator.MainActivity"
     tools:ignore="TextFields" >
 
  
@@ -13,6 +13,20 @@
         android:layout_height="38dp"
         android:background="#7fffd4"
         tools:ignore="UselessParent" >
+        
+        <LinearLayout
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|left" >
+            
+           <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow" /> 
+                      
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,6 +52,9 @@
         android:layout_height="388dp"
         android:background="@drawable/logo1"
         android:orientation="vertical" >
+
+       
+
     </LinearLayout>
     <LinearLayout
             android:layout_width="fill_parent"
