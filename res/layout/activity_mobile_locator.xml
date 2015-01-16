@@ -105,7 +105,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_marginTop="5dp"
-            android:background="#7fffd4"
+             android:background="#7fffd4"
             android:orientation="vertical" >
     
     
@@ -119,11 +119,9 @@
 
         <Button
             android:id="@+id/buttonSubmit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#7fffd4"
-            android:text="Search"
-            android:textColor="#8b0000"
+             android:layout_width="80dp"
+           android:layout_height="30dp"      
+            android:background="@drawable/search"                 
             tools:ignore="HardcodedText" />
     </LinearLayout>
 
@@ -137,7 +135,7 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="150dp"
+            android:layout_height="160dp"
             android:background="#7fffd4"
             android:gravity="center|top"
             tools:ignore="UselessLeaf,DisableBaselineAlignment" >
@@ -153,27 +151,28 @@
 
        </LinearLayout>
 
-<!--   <ScrollView -->
-<!--         android:layout_width="fill_parent" -->
-<!--         android:layout_height="0dp" -->
-<!--         android:layout_weight="0.77" >  -->
+  <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.77" > 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="30dp"
+        android:layout_height="4dp"
         android:background="#7fffd4"
         tools:ignore="UselessLeaf" >
         
 <!--             <WebView -->
 <!--                 android:id="@+id/WebUrl" -->
 <!--                 android:layout_width="match_parent" -->
-<!--                 android:layout_height="93dp" -->
+<!--                 android:layout_height="400dp" -->
 <!--                 android:isScrollContainer="true" /> -->
 
           </LinearLayout>      
-<!--     </ScrollView> -->
-       <LinearLayout
+    </ScrollView>
+
+       <LinearLayout
            android:layout_width="match_parent"
-           android:layout_height="match_parent"
+           android:layout_height="38dp"
            android:background="@drawable/company"
            android:gravity="bottom" >
 
