@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#7fffd4"
     tools:context="com.example.number_locator.MainActivity"
     tools:ignore="TextFields" >
 
@@ -45,7 +46,9 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="99dp"
-        android:background="@drawable/logo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/logo2"
         android:orientation="vertical" >
     </LinearLayout>
 
@@ -161,7 +164,7 @@
 
 <LinearLayout
     android:layout_width="fill_parent"
-    android:layout_height="40dp"
+    android:layout_height="80dp"
     android:background="#7fffd4"
     android:gravity="center"
     android:orientation="vertical"
@@ -169,13 +172,23 @@
 
     <Button
         android:id="@+id/buttonSubmit"
-        android:layout_width="100dp"
+        android:layout_width="127dp"
         android:layout_height="30dp"
-        android:layout_weight="1"
         android:background="@drawable/submit"
         tools:ignore="HardcodedText" />
+
+<!--     <Button -->
+<!--         android:id="@+id/buttonSearch" -->
+<!--         android:layout_width="80dp" -->
+<!--         android:layout_height="30dp" -->
+<!--         android:layout_weight="1" -->
+<!--         android:background="@drawable/submit" -->
+<!--         tools:ignore="HardcodedText" /> -->
 </LinearLayout>
 
+
+</LinearLayout>
+    </ScrollView>   
 <LinearLayout
     android:layout_width="fill_parent"
     android:layout_height="74dp"
@@ -183,7 +196,7 @@
     android:orientation="vertical"
     tools:ignore="UselessLeaf" >
 
-    </LinearLayout>
+   </LinearLayout>
     
     <LinearLayout
         android:layout_width="fill_parent"
@@ -193,8 +206,7 @@
         </LinearLayout>
         
  
-</LinearLayout>
-    </ScrollView>   
+
     
     
     

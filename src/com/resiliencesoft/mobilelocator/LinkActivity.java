@@ -17,7 +17,8 @@ public class LinkActivity extends ActionBarActivity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_link);
-		search=(Button)findViewById(R.id.buttonSubmit);
+		search=(Button)findViewById(R.id.buttonSearch);
+
 		search.setOnClickListener(this);
 		feedback=(Button)findViewById(R.id.button2);
 		feedback.setOnClickListener(this);
@@ -52,7 +53,7 @@ public class LinkActivity extends ActionBarActivity implements OnClickListener {
 		{
 			switch(v.getId())
 			{ 
-			case R.id.buttonSubmit:
+			case R.id.buttonSearch:
 				Intent intent=new Intent(LinkActivity.this, MobileLocator.class);
 				startActivity(intent);
 				finish();

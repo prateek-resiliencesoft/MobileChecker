@@ -82,12 +82,7 @@ public class FeedbackActivity extends ActionBarActivity implements OnClickListen
 				{
 									
 				Toast.makeText(FeedbackActivity.this,"Internet Not Connected",Toast.LENGTH_SHORT).show();
-				}				
-				
-				
-				
-				
-				
+				}								
 				
 			}
 		});

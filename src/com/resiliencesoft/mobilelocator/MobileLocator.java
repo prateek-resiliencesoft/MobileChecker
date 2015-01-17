@@ -66,7 +66,8 @@ WebView webview;
     
     public void Search()
     {
-    	button=(Button)findViewById(R.id.buttonSubmit);
+     	button=(Button)findViewById(R.id.buttonSearch);
+    	
     	button.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -174,7 +175,7 @@ WebView webview;
 //			    webview.getSettings().setJavaScriptEnabled(true);
 //			    webview.loadUrl("https://www.google.co.in/?gfe_rd=cr&ei=PqerVL3rFKnW8geozYGABw&gws_rd=ssl#q=map+of+"+map);
 			    dialog.dismiss();
-			    
+			    editsearch.setText("");
 		 }
     }
 
