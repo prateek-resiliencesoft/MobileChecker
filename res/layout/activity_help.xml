@@ -7,49 +7,24 @@
     tools:context="com.resiliencesoft.mobilelocator.HelpActivity"
     tools:ignore="TextFields" >
 
-    <LinearLayout
+   
+
+        <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="38dp"
-        android:background="#7fffd4"
-        tools:ignore="UselessParent" >
+        android:layout_height="90dp"
+        android:orientation="vertical" >
 
-        <LinearLayout
-            android:layout_width="104dp"
-            android:layout_height="match_parent"
-            android:gravity="center|left"
-            android:orientation="vertical"
-            tools:ignore="RtlHardcoded" >
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="63dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/arrow"
-                tools:ignore="SelectableText" />
-
+           <ImageView
+            android:id="@+id/imageViewhelp"
+           android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/bacharrow" />
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="194dp"
-            android:layout_height="37dp"
-            android:gravity="center|left"
-            android:orientation="vertical"
-            tools:ignore="RtlHardcoded" >
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mobile Locator"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                tools:ignore="HardcodedText" />
-        </LinearLayout>
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="390dp"
-        android:background="#7fffd4"
+        android:layout_height="match_parent"
+        android:background="@drawable/page222"
         android:gravity="center|top"
         tools:ignore="UselessLeaf,DisableBaselineAlignment" >
 

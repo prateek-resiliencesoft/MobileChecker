@@ -28,9 +28,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,13 +44,15 @@ public class FeedbackActivity extends ActionBarActivity implements OnClickListen
 	 HttpPost httppost;
 	 boolean internetactive;
 	 Button feedback;
+	 ImageView imageview;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_feedback);
 		AddFeedback();
-		tvarrow1=(TextView)findViewById(R.id.textView3);
-		tvarrow1.setOnClickListener(this);
+		imageview=(ImageView)findViewById(R.id.imageView2);
+		imageview.setOnClickListener(this);
 		edname=(EditText)findViewById(R.id.editText1);
         edemail=(EditText)findViewById(R.id.editText2);
         edmessage=(EditText)findViewById(R.id.editText3);		
@@ -66,7 +70,7 @@ public class FeedbackActivity extends ActionBarActivity implements OnClickListen
 				firstname=edname.getText().toString();
 				email=edemail.getText().toString();
 				message=edmessage.getText().toString();
-				if (firstname.equals("") && message.equals(""))					
+				if (firstname.equals("")||message.equals(""))					
 				{
 				 Toast.makeText(FeedbackActivity.this, "Fields are empty",Toast.LENGTH_SHORT).show();
 				 return;
@@ -162,4 +166,7 @@ public class FeedbackActivity extends ActionBarActivity implements OnClickListen
 		startActivity(intent);
 		finish();
 	}
+
+
+	
 }

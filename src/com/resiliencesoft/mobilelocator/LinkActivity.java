@@ -8,22 +8,28 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class LinkActivity extends ActionBarActivity implements OnClickListener {
  Button search,feedback,help;
+ ImageView imageview;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE); //Remove title bar and logo
 		setContentView(R.layout.activity_link);
+		
 		search=(Button)findViewById(R.id.buttonSearch);
-
 		search.setOnClickListener(this);
 		feedback=(Button)findViewById(R.id.button2);
 		feedback.setOnClickListener(this);
 		help=(Button)findViewById(R.id.button3);
 		help.setOnClickListener(this);
+		imageview=(ImageView)findViewById(R.id.imageView1);
+		imageview.setOnClickListener(this);
 		
 	}
 
@@ -68,6 +74,7 @@ public class LinkActivity extends ActionBarActivity implements OnClickListener {
 				startActivity(new Intent(LinkActivity.this, HelpActivity.class));
 				 finish();
 			  break;
+			 
 			}
 			
 		 } 

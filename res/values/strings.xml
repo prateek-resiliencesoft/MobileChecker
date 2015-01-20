@@ -9,5 +9,7 @@
     <string name="title_activity_help_main">HelpMainActivity</string>
     <string name="title_activity_feedback">FeedbackActivity</string>
     <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_count">CountActivity</string>
+    <string name="title_activity_count_main">CountMainActivity</string>
 
 </resources>

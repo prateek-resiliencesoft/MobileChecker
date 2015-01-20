@@ -1,214 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"   
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#7fffd4"
     tools:context="com.example.number_locator.MainActivity"
-    tools:ignore="TextFields" >
+    tools:ignore="TextFields" xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="38dp"
-        android:background="#7fffd4" >
-
-        <LinearLayout
-            android:layout_width="104dp"
-            android:layout_height="37dp"
-            android:gravity="center|left"
-            android:orientation="vertical" >
-
-          <TextView
-              android:id="@+id/textView3"
-              android:layout_width="64dp"
-              android:layout_height="wrap_content"
-              android:background="@drawable/arrow" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="37dp"
-            android:gravity="center|left"
-            android:orientation="vertical"
-             >
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mobile Locator"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                tools:ignore="HardcodedText" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="99dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/logo2"
+        android:layout_height="90dp"
         android:orientation="vertical" >
-    </LinearLayout>
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/bacharrow" />
+
+<!--         <ImageView -->
+<!--             android:id="@+id/imageView1" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:background="@drawable/bacharrow" /> -->  
+   </LinearLayout> 
+
+     <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    tools:ignore="UselessLeaf" >
+                </LinearLayout>
     
-    
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="14dp"
-        android:background="#7fffd4"
-        android:orientation="vertical"
-        tools:ignore="UselessLeaf" >
-    </LinearLayout>
-    
-   <ScrollView
+ <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="5dp"
+           android:background="@drawable/page222"
+           android:orientation="vertical" >
+  <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="65"
-        android:background="#7fffd4" >
-        
+        android:layout_weight="65">
        <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="296dp"
+           android:orientation="vertical" >
+            
+          <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_marginTop="5dp"
-            android:background="#7fffd4"
-            android:orientation="vertical" >
-    
-    
-  <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:background="#7fffd4"
-        android:orientation="vertical"
-        tools:ignore="UselessLeaf" >  
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/blankbox"
-        android:ems="10"
-        android:hint="Name"
-        tools:ignore="HardcodedText" >
-
-        <requestFocus />
-    </EditText>
-  </LinearLayout>
-  
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="14dp"
-        android:background="#7fffd4"
-        android:orientation="vertical"
-        tools:ignore="UselessLeaf" >
-    </LinearLayout>
-    
-  <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:background="#7fffd4"
-        android:orientation="vertical"
-        tools:ignore="UselessLeaf" >    
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/blankbox"
-        android:ems="10"
-        android:hint="Email"
-        tools:ignore="HardcodedText" />
-
-    </LinearLayout>
-    
-<LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="14dp"
-        android:background="#7fffd4"
-        android:orientation="vertical"
-        tools:ignore="UselessLeaf" >
-</LinearLayout>
-
-<LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:background="#7fffd4"
-        android:orientation="vertical"
-        tools:ignore="UselessLeaf" >  
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/blankbox"
-        android:ems="10"
-        android:hint="Message"
-        android:inputType="textMultiLine"
-        tools:ignore="HardcodedText" />
-
-    </LinearLayout>
-<LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="14dp"
-        android:background="#7fffd4"
-        android:orientation="vertical"
-        tools:ignore="UselessLeaf" >
-   </LinearLayout>
-
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="80dp"
-    android:background="#7fffd4"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:ignore="UselessLeaf" >
-
-    <Button
-        android:id="@+id/buttonSubmit"
-        android:layout_width="127dp"
-        android:layout_height="30dp"
-        android:background="@drawable/submit"
-        tools:ignore="HardcodedText" />
-
-<!--     <Button -->
-<!--         android:id="@+id/buttonSearch" -->
-<!--         android:layout_width="80dp" -->
-<!--         android:layout_height="30dp" -->
-<!--         android:layout_weight="1" -->
-<!--         android:background="@drawable/submit" -->
-<!--         tools:ignore="HardcodedText" /> -->
-</LinearLayout>
-
-
-</LinearLayout>
-    </ScrollView>   
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="74dp"
-    android:background="#7fffd4"
-    android:orientation="vertical"
-    tools:ignore="UselessLeaf" >
-
-   </LinearLayout>
-    
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="30dp"
-        android:background="@drawable/company" >
-
+            android:layout_height="10dp"        
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf" >
         </LinearLayout>
-        
- 
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"                   
+                    android:orientation="vertical"
+                    tools:ignore="UselessLeaf" >
 
+                    <EditText
+                        android:id="@+id/editText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/blankbox"
+                        android:ems="10"
+                        android:hint="Name"
+                        tools:ignore="HardcodedText" >
+
+                        <requestFocus
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:orientation="vertical"
+                    tools:ignore="UselessLeaf" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"                    
+                    android:orientation="vertical"
+                    tools:ignore="UselessLeaf" >
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/blankbox"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"      
+                    android:orientation="vertical"
+                    tools:ignore="UselessLeaf" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"                    
+                    android:orientation="vertical"
+                    tools:ignore="UselessLeaf" >
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/blankbox"
+                        android:ems="10"
+                        android:hint="Message"
+                        android:inputType="textMultiLine"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"                    
+                    android:orientation="vertical"
+                    tools:ignore="UselessLeaf" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center|top"
+                    android:orientation="vertical"
+                    tools:ignore="UselessLeaf" >
+
+                    <Button
+                        android:id="@+id/buttonSubmit"
+                        android:layout_width="127dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/submit"
+                        tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+                     
+           </LinearLayout> 
+        </ScrollView> 
+    </LinearLayout> 
     
-    
-    
- </LinearLayout>
+
+</LinearLayout>

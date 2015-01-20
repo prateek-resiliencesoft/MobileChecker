@@ -3,71 +3,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-     android:background="#7fffd4"
+    android:orientation="vertical"    
     tools:context="com.resiliencesoft.mobilelocator.MainActivity"
     tools:ignore="TextFields" >
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="38dp"
-        android:background="#7fffd4" >
-
-        <LinearLayout
-            android:layout_width="104dp"
-            android:layout_height="37dp"
-            android:gravity="center|left"
-            android:orientation="vertical"
-            tools:ignore="RtlHardcoded" >
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/arrow"
-                tools:ignore="SelectableText" />
-
-        </LinearLayout>
-
+     
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="37dp"
+            android:layout_height="80dp"
             android:gravity="center|left"
             android:orientation="vertical"
             tools:ignore="RtlHardcoded" >
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mobile Locator"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                tools:ignore="HardcodedText" />
+            <ImageView
+                android:id="@+id/imageViewmobile"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/bacharrow"/>
            
         </LinearLayout>
-    </LinearLayout>
+   
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="110dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/logo2"
-        android:orientation="vertical" >
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="14dp"
-        android:background="#7fffd4"
         android:orientation="vertical"
         tools:ignore="UselessLeaf" >
     </LinearLayout>
 
     <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="5dp"
+           android:background="@drawable/page222"
+           android:orientation="vertical" >
+    
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="40dp"
-        android:background="#7fffd4"
+        
         android:orientation="vertical"
         tools:ignore="UselessLeaf" >
 
@@ -79,10 +53,10 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/blankbox"
             android:ems="10"
-            android:hint="Enter 10 digit Mobile Number"
-            android:inputType="phone"
+            android:hint="Enter 10 digit Mobile Number"           
             android:textAppearance="?android:attr/textAppearanceLarge"
-            tools:ignore="HardcodedText" >
+            tools:ignore="HardcodedText"
+            android:inputType="number" >
 
             <requestFocus />
         </EditText>
@@ -90,8 +64,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="14dp"
-        android:background="#7fffd4"
+        android:layout_height="14dp"      
         android:orientation="vertical"
         tools:ignore="UselessLeaf" >
     </LinearLayout>
@@ -105,13 +78,12 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_marginTop="5dp"
-             android:background="#7fffd4"
+             
             android:orientation="vertical" >
     
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="90dp"
-        android:background="#7fffd4"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
         tools:ignore="UselessLeaf" >
@@ -128,15 +100,14 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="4dp"
-        android:background="#7fffd4"
+        
         android:orientation="vertical"
         tools:ignore="UselessLeaf" >
     </LinearLayout>
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="160dp"
-            android:background="#7fffd4"
+            android:layout_height="180dp"         
             android:gravity="center|top"
             tools:ignore="UselessLeaf,DisableBaselineAlignment" >
 
@@ -151,32 +122,11 @@
 
        </LinearLayout>
   </LinearLayout>
-  </ScrollView>  
-<!--   <ScrollView -->
-<!--         android:layout_width="fill_parent" -->
-<!--         android:layout_height="0dp" -->
-<!--         android:layout_weight="0.77" >  -->
-<!--     <LinearLayout -->
-<!--         android:layout_width="fill_parent" -->
-<!--         android:layout_height="4dp" -->
-<!--         android:background="#7fffd4" -->
-<!--         tools:ignore="UselessLeaf" > -->
-        
-<!--             <WebView -->
-<!--                 android:id="@+id/WebUrl" -->
-<!--                 android:layout_width="match_parent" -->
-<!--                 android:layout_height="400dp" -->
-<!--                 android:isScrollContainer="true" /> -->
+  </ScrollView> 
+   </LinearLayout> 
 
-<!--           </LinearLayout>       -->
-<!--     </ScrollView> -->
 
-       <LinearLayout
-           android:layout_width="fill_parent"
-           android:layout_height="30dp"
-           android:background="@drawable/company"
-           android:gravity="bottom" >
-         </LinearLayout>  
+       
        
  
 
