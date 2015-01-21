@@ -11,18 +11,17 @@ import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
-import android.widget.TextView;
+
 
 public class HelpActivity extends ActionBarActivity implements OnClickListener {
-TextView tvarrow;
 ImageView imagehelp;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE);//Remove title bar and logo
 		setContentView(R.layout.activity_help);
-	imagehelp=(ImageView)findViewById(R.id.imageViewhelp);
-	imagehelp.setOnClickListener(this);
+	    imagehelp=(ImageView)findViewById(R.id.imageViewhelp);
+	    imagehelp.setOnClickListener(this);//click event on the image
 	}
 
 	@Override

@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.number_locator.MainActivity"
+    android:theme="@android:style/Theme.NoTitleBar"
     tools:ignore="TextFields" xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
@@ -48,10 +49,12 @@
             
           <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="10dp"        
+            android:layout_height="50dp"        
             android:orientation="vertical"
             tools:ignore="UselessLeaf" >
         </LinearLayout>
+        
+          
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="40dp"                   
@@ -137,7 +140,7 @@
 
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="wrap_content"
                     android:gravity="center|top"
                     android:orientation="vertical"
                     tools:ignore="UselessLeaf" >
@@ -148,9 +151,13 @@
                         android:layout_height="30dp"
                         android:background="@drawable/submit"
                         tools:ignore="HardcodedText" />
-
-                    </LinearLayout>
-                     
+                    </LinearLayout> 
+                    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"        
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf" >
+        </LinearLayout>                    
            </LinearLayout> 
         </ScrollView> 
     </LinearLayout> 

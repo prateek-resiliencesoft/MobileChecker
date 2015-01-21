@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -22,14 +23,14 @@ public class LinkActivity extends ActionBarActivity implements OnClickListener {
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE); //Remove title bar and logo
 		setContentView(R.layout.activity_link);
 		
-		search=(Button)findViewById(R.id.buttonSearch);
-		search.setOnClickListener(this);
-		feedback=(Button)findViewById(R.id.button2);
+		search=(Button)findViewById(R.id.buttonSearch);//find button
+		search.setOnClickListener(this);// instead of writing code for individual button this will create one auto generated method in activity
+		feedback=(Button)findViewById(R.id.button2);//find button
 		feedback.setOnClickListener(this);
-		help=(Button)findViewById(R.id.button3);
+		help=(Button)findViewById(R.id.button3);//find button
 		help.setOnClickListener(this);
-		imageview=(ImageView)findViewById(R.id.imageView1);
-		imageview.setOnClickListener(this);
+		imageview=(ImageView)findViewById(R.id.imageView1);//find image
+		imageview.setOnClickListener(this); // click event on the image
 		
 	}
 
@@ -52,6 +53,7 @@ public class LinkActivity extends ActionBarActivity implements OnClickListener {
 		return super.onOptionsItemSelected(item);
 	}
 
+	// this is  Auto-generated method stub to implement button click event 
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub

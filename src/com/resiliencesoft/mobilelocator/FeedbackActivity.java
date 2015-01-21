@@ -16,7 +16,7 @@ import org.apache.http.params.CoreProtocolPNames;
 import org.apache.http.params.HttpParams;
 
 import com.resiliencesoft.mobilelocator.R;
-import com.resiliencesoft.mobilelocator.MobileLocator.getresult;
+
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Context;
@@ -48,14 +48,14 @@ public class FeedbackActivity extends ActionBarActivity implements OnClickListen
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE);//Remove title bar and logo
 		setContentView(R.layout.activity_feedback);
 		AddFeedback();
-		imageview=(ImageView)findViewById(R.id.imageView2);
+		imageview=(ImageView)findViewById(R.id.imageView2);//find image
 		imageview.setOnClickListener(this);
-		edname=(EditText)findViewById(R.id.editText1);
-        edemail=(EditText)findViewById(R.id.editText2);
-        edmessage=(EditText)findViewById(R.id.editText3);		
+		edname=(EditText)findViewById(R.id.editText1);//find edittext
+        edemail=(EditText)findViewById(R.id.editText2);//find edittext
+        edmessage=(EditText)findViewById(R.id.editText3);	//find edittext	
 	}
 	
 	public void AddFeedback()
@@ -127,7 +127,7 @@ public class FeedbackActivity extends ActionBarActivity implements OnClickListen
 		protected void onPostExecute(Void result1)
 		{ 
 			super.onPostExecute(result1);
-		   int duration = Toast.LENGTH_SHORT;
+//		   int duration = Toast.LENGTH_SHORT;
 		   try {
 			   Toast.makeText(FeedbackActivity.this,"Thanks For Your Feedback",Toast.LENGTH_SHORT).show();
 			   edname.setText("");
