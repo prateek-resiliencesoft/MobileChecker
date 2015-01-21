@@ -82,11 +82,16 @@ WebView webview;
 				 Toast.makeText(MobileLocator.this, "Fields are empty",Toast.LENGTH_SHORT).show();	
 				 return;
 				} 
-				 else if (SearchNumber.length() < 10 ||SearchNumber.length()>10 ) //check weather data is less or greater 
+				 else if (SearchNumber.length() < 10  ) //check weather data is less or greater 
 				{
-				Toast.makeText(MobileLocator.this,"Please Enter 10 digit Mobile number",Toast.LENGTH_SHORT).show();
+				Toast.makeText(MobileLocator.this,"Mobile number is Less than 10 digit",Toast.LENGTH_SHORT).show();
 				return;
 				} 
+				 else if(SearchNumber.length()>10)
+				 {
+					 Toast.makeText(MobileLocator.this,"Mobile number is greater than 10 digit",Toast.LENGTH_SHORT).show();
+						return;
+				 }	 
 				 else
 				{ 
 				 internetactive = isNetworkAvailable();//check network

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.number_locator.MainActivity"
+    tools:context="com.resiliencesoft.mobilelocator.MainActivity"
     android:theme="@android:style/Theme.NoTitleBar"
     tools:ignore="TextFields" xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -18,11 +18,6 @@
             android:layout_height="90dp"
             android:background="@drawable/bacharrow" />
 
-<!--         <ImageView -->
-<!--             android:id="@+id/imageView1" -->
-<!--             android:layout_width="match_parent" -->
-<!--             android:layout_height="match_parent" -->
-<!--             android:background="@drawable/bacharrow" /> -->  
    </LinearLayout> 
 
      <LinearLayout

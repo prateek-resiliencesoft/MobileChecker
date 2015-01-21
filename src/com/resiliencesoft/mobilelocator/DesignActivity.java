@@ -21,6 +21,7 @@ ImageView imageviewdesign;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE); //Remove title bar and logo
+		
 		setContentView(R.layout.activity_design);   
 		imageviewdesign=(ImageView)findViewById(R.id.imageView1Design);//find imageview
 		imageviewdesign.setOnClickListener(this);//event on the imageview
