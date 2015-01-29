@@ -29,8 +29,6 @@
         </LinearLayout>
     </LinearLayout>
 
-
-
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="90dp"
@@ -107,11 +105,11 @@
                    android:layout_weight="1.38"
                    android:background="@drawable/search111"
                    tools:ignore="HardcodedText" />
-                             
-                <View 
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="5"/>
+
+             <View
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="5" />
                 
                <Button
                    android:id="@+id/button2"

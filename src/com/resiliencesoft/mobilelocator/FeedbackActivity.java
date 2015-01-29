@@ -71,11 +71,11 @@ public class FeedbackActivity extends ActionBarActivity implements OnClickListen
 				email=edemail.getText().toString();
 				message=edmessage.getText().toString();
 				if (firstname.equals("")||message.equals(""))					
-				{
+				 {
 				 Toast.makeText(FeedbackActivity.this, "Fields are empty",Toast.LENGTH_SHORT).show();
 				 return;
-				} 
-				else
+				 } 				
+			   else
 				{ 
 				 internetactive = isNetworkAvailable();
 				}

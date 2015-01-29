@@ -60,7 +60,7 @@ WebView webview;
         tvmessage=(TextView)findViewById(R.id.textView3);//find textview
         image=(ImageView)findViewById(R.id.imageViewmobile);//find image
         image.setOnClickListener(this);//it will auto generate method in the class activity
-       
+        	
         
     }
     
@@ -164,6 +164,7 @@ WebView webview;
 			    signal=parts[1];
 			    operator=parts[2].replace(parts[2].substring(parts[2].indexOf("</a")),"");
 			    msg= location+"\n"+signal+"\n"+operator;
+//			    Toast.makeText(MobileLocator.this, msg,Toast.LENGTH_LONG).show();
 			    tvmessage.setText(msg);
 			    //here we can write code for map in webview or mapview
 			    dialog.dismiss();// it will destroy the dialog
