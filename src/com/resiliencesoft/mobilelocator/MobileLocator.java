@@ -19,6 +19,7 @@ import com.resiliencesoft.mobilelocator.R;
 
 
 import android.support.v7.app.ActionBarActivity;
+import android.telephony.TelephonyManager;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -50,12 +51,14 @@ HttpClient httpclient;
 ProgressDialog dialog; 
 ImageView image;
 WebView webview;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);  //Remove title bar and logo
         setContentView(R.layout.activity_mobile_locator);       
         Search();                                       //method call
+  
         editsearch=(EditText)findViewById(R.id.editText1);//find edittext
         tvmessage=(TextView)findViewById(R.id.textView3);//find textview
         image=(ImageView)findViewById(R.id.imageViewmobile);//find image
@@ -104,14 +107,15 @@ WebView webview;
 			     {
 				    Toast.makeText(MobileLocator.this,"Internet Not Connected",Toast.LENGTH_SHORT).show();
 			    	}				
-				
-				
-				
+							
 			}
 		});
     	
     }
 
+    
+    
+    
 //this method check the the network
    protected Boolean isNetworkAvailable() {
 		// TODO Auto-generated method stub
